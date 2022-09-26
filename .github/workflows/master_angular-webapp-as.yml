@@ -31,5 +31,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'angular-webapp-as'
-          publish-profile: $
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_59F1321559DF4802AAA6A80897B0AC3D }}
           package: ./dist/angular8-crud-demo
