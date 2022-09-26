@@ -24,8 +24,9 @@ jobs:
       - name: npm install, build, and test
         run: |
           npm install
-          npm run build --if-present
-          npm run test --if-present
+          node --max_old_space_size=8192 node_modules/@angular/cli/bin/ng build
+          ##npm run build --if-present
+          ##npm run test --if-present
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
