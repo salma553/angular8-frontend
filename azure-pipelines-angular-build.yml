@@ -18,5 +18,6 @@ steps:
 - script: |
     npm install -g @angular/cli
     npm install
-    ng build --prod
+    node --max_old_space_size=8192 node_modules/@angular/cli/bin/ng build --prod --configuration=prod
+#    ng build --prod
   displayName: 'npm install and build'
