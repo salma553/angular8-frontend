@@ -5,7 +5,7 @@ phases:
     commands:
       - echo  build....
       - npm install
-      - ng build
+      - node --max_old_space_size=8192 node_modules/@angular/cli/bin/ng build
       - echo Logging in to Amazon ECR...
       - $(aws ecr get-login --no-include-email --region $AWS_DEFAULT_REGION)
   build:
