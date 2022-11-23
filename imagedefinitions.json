@@ -1,0 +1,6 @@
+[
+    {
+        "name": "angular-demo",
+        "imageUri": "090187438878.dkr.ecr.us-east-1.amazonaws.com/demo-pipeline-repo:20221123.074440"
+    }
+]
