@@ -22,3 +22,4 @@ phases:
       - echo Pushing the Docker image...
       - docker push 090187438878.dkr.ecr.us-east-1.amazonaws.com/demo-pipeline-repo:$IMAGE_TAG
       - docker push 090187438878.dkr.ecr.us-east-1.amazonaws.com/demo-pipeline-repo:latest
+      - aws codepipeline start-pipeline-execution --name deploy
